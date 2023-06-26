@@ -25,4 +25,9 @@ function formatInput(element) {
   
     document.getElementById("ganancia").innerHTML = "La ganancia generada mensualmente es: $" + gananciaFormateada;
   }
-  
+
+var button = document.querySelector('.button');
+var nav = document.querySelector('.nav');
+button.addEventListener('click', function () {
+    nav.classList.toggle('activo');
+});
