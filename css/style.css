@@ -61,7 +61,6 @@ body main .simulador{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
     margin-top: 8rem;
 }
 body main .simulador .sim{
@@ -86,6 +85,14 @@ body main .simulador .sim p {
     border: 2px solid #000;
     padding: 1rem;
     text-align: center;
+}
+body footer{
+    text-align: center;
+    font-size: 1em;
+    color: #000;
+    margin-top: 25rem;
+    background-color: #ffe15a;
+    padding: 1rem;
 }
 @media screen and (max-width: 820px ) {
     body header{
@@ -123,5 +130,59 @@ body main .simulador .sim p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (max-width: 820px ) {
+    body main .simulador{
+        margin-top: 12rem;
+    }
+    body footer{
+        text-align: center;
+        font-size: 1em;
+        color: #000;
+        margin-top: 15.5rem;
+        background-color: #ffe15a;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 820px ) {
+    body main .simulador{
+        margin-top: 7.6rem;
+    }
+}
+@media screen and (max-width: 414px ) {
+    body main .simulador{
+        margin-top: 10.8rem;
+    }
+}
+@media screen and (max-width: 360px ) {
+    body main .simulador{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 375px ) {
+    body main .simulador{
+        margin-top: 1rem;
+    }
+    body footer{
+        text-align: center;
+        font-size: 1em;
+        color: #000;
+        margin-top: 11rem;
+        background-color: #ffe15a;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 393px ) {
+    body main .simulador{
+        margin-top: 11rem;
+    }
+    body footer{
+        text-align: center;
+        font-size: 1em;
+        color: #000;
+        margin-top: 12.5rem;
+        background-color: #ffe15a;
+        padding: 1rem;
     }
 }
