@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,500;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+a{
+    color: #000;
+}
+
+body header {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe15a;
+    width: 100%;
+}
+body header .logo {
+    margin-top: .3rem;
+}
+body header .logo h1{
+    font-size: 1.5em;
+}
+body header .button {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+body header .button .svg {
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+body header nav {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+body header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body header nav ul li {
+    padding: .5rem;
+}
+body main .simulador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-top: 8rem;
+}
+body main .simulador .sim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body main .simulador .sim input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+body main .simulador .sim button{
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #ffe15a;
+    margin-bottom: 1rem;
+}
+body main .simulador .sim p {
+    border: 2px solid #000;
+    padding: 1rem;
+}
+@media screen and (max-width: 820px ) {
+    body header{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    body header .button {
+        display: block;
+    }
+    body header nav {
+        background: none;
+        border: none;
+        width: 100%;
+        display: none;
+        opacity: 0;
+        height: 0vh;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    body header nav.active {
+        display: flex;
+        opacity: 1;
+        height: 20vh;
+        pointer-events: auto;
+    }
+    body header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
